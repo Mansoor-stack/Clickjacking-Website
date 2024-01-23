@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Test</title>
+    <style>
+        /* Adjust the styling to make the iframe invisible or transparent */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Replace 'TARGET_URL' with the actual URL of the target website -->
+    <iframe src="TARGET_URL" frameborder="0"></iframe>
+    <h1>Clickjacking Test Page</h1>
+    <p>This is a test page for clickjacking.</p>
+</body>
+</html>
